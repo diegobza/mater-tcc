@@ -1,2 +1,2 @@
-# mater-tcc
-LaTeX para o TCC da FCTMC
+# Mater TCC
+Modelo em LaTeX para o TCC da FCTMC.

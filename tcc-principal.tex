@@ -1,9 +1,10 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}   % Português brasileiro.
-\usepackage{indentfirst}     % Espaçamento de primeiro parágrafo.
-\usepackage{setspace}        % Espaçamento entrelinhas.
+\usepackage[brazil]{babel}    % Português brasileiro.
+\usepackage{sectsty}          % Mudança de estilo das seções.
+\usepackage{indentfirst}      % Espaçamento de primeiro parágrafo.
+\usepackage{setspace}         % Espaçamento entrelinhas.
 \usepackage{geometry}
 \geometry{
   a4paper,
@@ -12,7 +13,8 @@
   top=30mm,
   bottom=20mm,
 }
-\setlength{\parindent}{2cm}  % Espaçamento de primeira linha.
+\setlength{\parindent}{2cm}   % Espaçamento de primeira linha.
+\allsectionsfont{\normalsize} % Tamanho da fonte 12 para seções.
 
 \begin{document}
   \input{tcc-frente.tex}

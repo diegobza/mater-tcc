@@ -1,5 +1,20 @@
-\newcommand{\TITULO}{TÍTULO DO ARTIGO EM PORTUGUÊS}
+\newcommand{\TITULOP}{TÍTULO DO ARTIGO EM PORTUGUÊS}
+%\newcommand{\SUBTITULOP}{SUBTÍTULO EM PORTUGUÊS}
+\newcommand{\TITULOE}{TÍTULO DO ARTIGO EM LÍNGUA ESTRANGEIRA}
+%\newcommand{\SUBTITULOE}{SUBTÍTULO EM LÍNGUA ESTRANGEIRA}
 
-\begin{center}
-  \textbf{\TITULO}
-\end{center}
+\begin{onehalfspace}
+  \begin{center}
+    \ifdefined\SUBTITULOP
+      \textbf{\TITULOP: \SUBTITULOP}
+    \else
+      \textbf{\TITULOP}
+    \fi
+
+    \ifdefined\SUBTITULOE
+      \textbf{\TITULOE: \SUBTITULOE}
+    \else
+      \textbf{\TITULOE}
+    \fi
+  \end{center}
+\end{onehalfspace}

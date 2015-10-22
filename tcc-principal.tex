@@ -1,22 +1,29 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}      % Português brasileiro.
-\usepackage{sectsty}            % Mudança de estilo das seções.
-\usepackage{indentfirst}        % Espaçamento de primeiro parágrafo.
-\usepackage{setspace}           % Espaçamento entrelinhas.
-\usepackage[hang]{footmisc}     % Espaçamento da nota de rodapé.
+\usepackage[brazil]{babel}         % Português brasileiro.
+\usepackage{sectsty}               % Mudança de estilo das seções.
+\usepackage{indentfirst}           % Espaçamento de primeiro parágrafo.
+\usepackage{setspace}              % Espaçamento entrelinhas.
+\usepackage[hang]{footmisc}        % Espaçamento da nota de rodapé.
+\usepackage{fancyhdr}              % Cabeçalho para numeração de páginas.
 \usepackage{geometry}
+\setlength\headheight{3.35mm}
+\setlength\headsep{6.65mm}
 \geometry{
   a4paper,
-  left=30mm,
-  right=20mm,
-  top=30mm,
-  bottom=20mm,
+  left=3cm,
+  right=2cm,
+  top=3cm,
+  bottom=2cm,
 }
-\setlength{\parindent}{2cm}     % Espaçamento de primeira linha.
-\setlength\footnotemargin{10pt} % Espaçamento esquerdo da nota de rodapé.
-\allsectionsfont{\normalsize}   % Tamanho da fonte 12 para seções.
+\setlength\parindent{2cm}          % Espaçamento de primeira linha.
+\setlength\footnotemargin{10pt}    % Espaçamento esquerdo da nota de rodapé.
+\allsectionsfont{\normalsize}      % Tamanho da fonte 12 para seções.
+\pagestyle{fancy}                  % Cabeçalho e rodapé vazios.
+\fancyhf{}                         % Apaga todos os campos do cabeçalho e rodapé.
+\rhead{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0pt} % Remove linha do cabeçalho.
 
 \begin{document}
   \input{tcc-frente.tex}
